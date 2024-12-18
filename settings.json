@@ -1,0 +1,26 @@
+{
+  "$schema": "./settings.schema.json",
+  "backup": {
+    "compression": false,
+    "location": "C:/backup",
+    "logging": false,
+    "encryption": {
+      "enabled": false,
+      "key": "${env:ENCRYPTION_KEY}",
+      "excluded_files": []
+    },
+    "environment_variables": {
+      "machine": [],
+      "user": []
+    },
+    "files": [],
+    "folders": [],
+    "exclusions": {
+      "folders": [
+        "dist",
+        "node_modules"
+      ],
+      "files": ["*.tmp"]
+    }
+  }
+}
